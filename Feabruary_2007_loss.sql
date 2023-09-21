@@ -8,5 +8,5 @@ WHERE EXTRACT(YEAR FROM payment_date) = 2007
 GROUP BY payment.customer_id, customer.first_name, customer.last_name
 
 ORDER BY SUM(payment.amount) DESC
-LIMIT 10
+LIMIT 1
   
